@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sample-library": [
+        "dist/sample-library"
+      ],
+      "sample-library/*": [
+        "dist/sample-library/*"
+      ]
+    }
   }
 }
