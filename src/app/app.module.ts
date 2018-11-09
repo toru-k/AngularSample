@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './component/user/users/users.component';
 import { UserPipe } from './pipe/user.pipe';
+import { UserDirective } from './directive/user.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    UserPipe
+    UserPipe,
+    UserDirective
   ],
   imports: [
     BrowserModule,
