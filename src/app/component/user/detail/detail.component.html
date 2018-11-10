@@ -1,0 +1,15 @@
+<div *ngIf="user">
+  <h2>{{user.name | uppercase}} Details</h2>
+  <div><span>ID: </span>{{user.id}}</div>
+  <div>
+    <span>Name: </span>{{user.name}}</div>
+  <div>
+    <span>Company: </span>{{user.company}}</div>
+  <div>
+    <span>Tel: </span>{{user.tel}}</div>
+  <div>
+    <span>Birthday: </span>{{user.birthDay | date: "YY/MM/DD"}}</div>
+  <div>
+    <span>Sex: </span>{{user.sex | sex}}</div>
+</div>
+<button (click)="goBack()">go back</button>
