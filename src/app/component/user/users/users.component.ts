@@ -10,8 +10,6 @@ import { USERS } from '../../../mock/mock-user';
 export class UsersComponent implements OnInit {
   constructor() {}
 
-  users = USERS;
-
   ngOnInit() {
     const enum1 = Sample.Sample1;
     console.log(Sample.sampleMethod(enum1));

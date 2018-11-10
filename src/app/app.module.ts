@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './component/user/users/users.component';
 import { UserPipe } from './pipe/user.pipe';
 import { UserDirective } from './directive/user.directive';
+import { UserlistComponent } from './component/user/userlist/userlist.component';
 import { SexPipe } from './pipe/sex.pipe';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { SexPipe } from './pipe/sex.pipe';
     UsersComponent,
     UserPipe,
     UserDirective,
+    UserlistComponent,
     SexPipe
   ],
   imports: [BrowserModule, AppRoutingModule],
