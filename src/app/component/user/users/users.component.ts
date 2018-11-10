@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Sample, Sample2 } from 'src/app/enum/sample.enum';
+import { USERS } from '../../../mock/mock-user';
 
 @Component({
   selector: 'app-users',
@@ -8,6 +9,8 @@ import { Sample, Sample2 } from 'src/app/enum/sample.enum';
 })
 export class UsersComponent implements OnInit {
   constructor() {}
+
+  users = USERS;
 
   ngOnInit() {
     const enum1 = Sample.Sample1;

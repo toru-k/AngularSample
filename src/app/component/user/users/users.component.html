@@ -2,4 +2,29 @@
 <p appUnderline>
   users works!
 </p>
-<p>日付: {{"20181109" |date: "YYYY年MM月DD日"}}</p>
+<p>日付: {{"20181109" | date: "YYYY年MM月DD日"}}</p>
+<h3>
+  Users
+</h3>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>COMPANY</th>
+      <th>TEL</th>
+      <th>BIRTHDAY</th>
+      <th>SEX</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.company}}</td>
+      <td>{{user.tel}}</td>
+      <td>{{user.birthday | date: "YY/MM/DD"}}</td>
+      <td>{{user.sex}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,4 +1,4 @@
-export { Sample, Sample2 };
+export { Sample, Sample2, Sex };
 enum Sample {
   Sample1,
   Sample2,
@@ -31,4 +31,9 @@ enum Sample2 {
   Sample1 = 'enum Sample1',
   Sample2 = 'enum Sample2',
   Sample3 = 'enum Sample3'
+}
+
+enum Sex {
+  man,
+  woman
 }
