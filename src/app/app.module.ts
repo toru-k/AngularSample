@@ -8,6 +8,8 @@ import { UserPipe } from './pipe/user.pipe';
 import { UserDirective } from './directive/user.directive';
 import { UserlistComponent } from './component/user/userlist/userlist.component';
 import { SexPipe } from './pipe/sex.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,12 @@ import { SexPipe } from './pipe/sex.pipe';
     UserlistComponent,
     SexPipe
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTableModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

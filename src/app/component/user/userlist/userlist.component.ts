@@ -8,6 +8,15 @@ import { USERS } from 'src/app/mock/mock-user';
 })
 export class UserlistComponent implements OnInit {
   users = USERS;
+  // matColumnDefと合わせる。
+  displayedColumns: string[] = [
+    'id',
+    'name',
+    'company',
+    'tel',
+    'birthday',
+    'sex'
+  ];
   constructor() {}
 
   ngOnInit() {}
