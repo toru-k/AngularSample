@@ -1,7 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appUser]'
+  selector: '[appUnderline]'
 })
 export class UserDirective {
   constructor(el: ElementRef) {
