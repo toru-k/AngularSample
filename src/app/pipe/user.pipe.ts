@@ -6,6 +6,6 @@ import * as moment from 'moment';
 })
 export class UserPipe implements PipeTransform {
   transform(date: string, format: string): string {
-    return moment().format(format);
+    return moment(date).format(format);
   }
 }
