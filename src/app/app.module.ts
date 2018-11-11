@@ -15,7 +15,8 @@ import {
   MatButtonModule,
   MatDividerModule,
   MatDatepickerModule,
-  MatNativeDateModule
+  MatNativeDateModule,
+  MatRadioModule
 } from '@angular/material';
 import { DetailComponent } from './component/user/detail/detail.component';
 import { FormsModule } from '@angular/forms';
@@ -40,6 +41,7 @@ import { FormsModule } from '@angular/forms';
     MatDividerModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatRadioModule,
     FormsModule
   ],
   providers: [],

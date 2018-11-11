@@ -11,6 +11,8 @@ import {
   MAT_DATE_LOCALE
 } from '@angular/material/core';
 import * as _moment from 'moment';
+import { Sex } from 'src/app/enum/sample.enum';
+import { userInfo } from 'os';
 const moment = _moment;
 
 export const MY_FORMATS = {
@@ -44,6 +46,8 @@ export const MY_FORMATS = {
 })
 export class DetailComponent implements OnInit {
   user: User;
+  genderList = [{ id: Sex.man, label: '男' }, { id: Sex.woman, label: '女' }];
+  selectedGender;
   constructor(private route: ActivatedRoute, private location: Location) {}
 
   ngOnInit() {
@@ -54,6 +58,7 @@ export class DetailComponent implements OnInit {
     // JavaScript (+) 演算子は文字列を数値に変換します。
     const id = +this.route.snapshot.paramMap.get('id');
     this.user = USERS.find(user => user.id === id);
+    this.selectedGender = this.user.sex;
   }
 
   goBack(): void {
