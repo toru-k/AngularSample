@@ -9,7 +9,11 @@ import { UserDirective } from './directive/user.directive';
 import { UserlistComponent } from './component/user/userlist/userlist.component';
 import { SexPipe } from './pipe/sex.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTableModule, MatInputModule } from '@angular/material';
+import {
+  MatTableModule,
+  MatInputModule,
+  MatButtonModule
+} from '@angular/material';
 import { DetailComponent } from './component/user/detail/detail.component';
 import { FormsModule } from '@angular/forms';
 
@@ -29,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MatTableModule,
     MatInputModule,
+    MatButtonModule,
     FormsModule
   ],
   providers: [],

@@ -16,6 +16,6 @@
       <span>Birthday: </span>{{user.birthDay | date: "YY/MM/DD"}}</div>
     <div>
       <span>Sex: </span>{{user.sex | sex}}</div>
-    <button (click)="goBack()">go back</button>
+    <button mat-stroked-button (click)="goBack()" color="accent">go back</button>
   </form>
 </div>
