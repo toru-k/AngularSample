@@ -1,0 +1,28 @@
+<div *ngIf="user">
+  <h2>{{user.name}} Details</h2>
+  <!-- formタグを利用する場合、inputタグにはnameが必須。 -->
+  <form>
+    <div><span>ID : </span>{{user.id}}</div>
+    <mat-divider></mat-divider>
+    <br />
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.name" placeholder="Name" name="name" /></mat-form-field>
+    </div>
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.company" placeholder="Company" name="company" /></mat-form-field>
+    </div>
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.tel" placeholder="Tel" name="tel" /></mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Birthday" [(ngModel)]="user.birthday" name="birthday">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <div>
+      <span>Sex: </span>{{user.sex | sex}}</div><br />
+    <button mat-stroked-button (click)="goBack()" color="accent">go back</button>
+  </form>
+</div>
