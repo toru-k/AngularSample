@@ -2,7 +2,9 @@
   <h2>{{user.name}} Details</h2>
   <!-- formタグを利用する場合、inputタグにはnameが必須。 -->
   <form>
-    <div><span>ID: </span>{{user.id}}</div>
+    <div><span>ID : </span>{{user.id}}</div>
+    <mat-divider></mat-divider>
+    <br />
     <div>
       <mat-form-field><input matInput [(ngModel)]="user.name" placeholder="Name" name="name" /></mat-form-field>
     </div>
@@ -15,7 +17,7 @@
     <div>
       <span>Birthday: </span>{{user.birthDay | date: "YY/MM/DD"}}</div>
     <div>
-      <span>Sex: </span>{{user.sex | sex}}</div>
+      <span>Sex: </span>{{user.sex | sex}}</div><br />
     <button mat-stroked-button (click)="goBack()" color="accent">go back</button>
   </form>
 </div>

@@ -12,7 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatTableModule,
   MatInputModule,
-  MatButtonModule
+  MatButtonModule,
+  MatDividerModule
 } from '@angular/material';
 import { DetailComponent } from './component/user/detail/detail.component';
 import { FormsModule } from '@angular/forms';
@@ -34,6 +35,7 @@ import { FormsModule } from '@angular/forms';
     MatTableModule,
     MatInputModule,
     MatButtonModule,
+    MatDividerModule,
     FormsModule
   ],
   providers: [],
