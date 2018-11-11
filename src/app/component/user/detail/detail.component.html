@@ -1,19 +1,21 @@
 <div *ngIf="user">
   <h2>{{user.name}} Details</h2>
-  <div><span>ID: </span>{{user.id}}</div>
-  <div>
-    <label>Name:
-      <input [(ngModel)]="user.name" placeholder="Name" />
-    </label>
-  </div>
-  <div>
-    <label>Company: <input [(ngModel)]="user.company" placeholder="Company" />
-    </label>
-  </div>
-  <div>
-    <label>Tel: <input [(ngModel)]="user.tel" placeholder="Tel" /></label></div>
-  <div>
-    <span>Birthday: </span>{{user.birthDay | date: "YY/MM/DD"}}</div>
-  <div>
-    <span>Sex: </span>{{user.sex | sex}}</div>
-  <button (click)="goBack()">go back</button>
+  <!-- formタグを利用する場合、inputタグにはnameが必須。 -->
+  <form>
+    <div><span>ID: </span>{{user.id}}</div>
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.name" placeholder="Name" name="name" /></mat-form-field>
+    </div>
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.company" placeholder="Company" name="company" /></mat-form-field>
+    </div>
+    <div>
+      <mat-form-field><input matInput [(ngModel)]="user.tel" placeholder="Tel" name="tel" /></mat-form-field>
+    </div>
+    <div>
+      <span>Birthday: </span>{{user.birthDay | date: "YY/MM/DD"}}</div>
+    <div>
+      <span>Sex: </span>{{user.sex | sex}}</div>
+    <button (click)="goBack()">go back</button>
+  </form>
+</div>
